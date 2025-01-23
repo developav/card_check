@@ -1,5 +1,5 @@
-dist/
-build/
-out/
 node_modules/
-.parcel-cache
+dist/
+*.log
+.env
+.DS_Store
