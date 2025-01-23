@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Payment</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="payment-form">
+    <h1>Оплата онлайн</h1>
+    <form id="paymentForm" novalidate>
+      <div class="form-group">
+        <label for="cardNumber">Номер карты</label>
+        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
+        <div id="cardLogo"></div>
+        <span class="error-message" id="cardNumberError"></span>
+      </div>
+      <div class="form-group">
+        <label for="expiryDate">Дата окончания (MM/YY)</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY">
+        <span class="error-message" id="expiryDateError"></span>
+      </div>
+      <div class="form-group">
+        <label for="cvc">CVC/CVV</label>
+        <input type="text" id="cvc" placeholder="CVC">
+        <span class="error-message" id="cvcError"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="example@mail.com">
+        <span class="error-message" id="emailError"></span>
+      </div>
+      <button type="submit" id="submitButton" disabled>Оплатить</button>
+    </form>
+  </div>
+  <script type="module" src="./index.ts"></script>
+</body>
+</html>
